@@ -8,3 +8,5 @@
 07_Comparison Operators
 08_IFstatements
 09_While
+10_For_loop
+

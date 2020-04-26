@@ -1,0 +1,42 @@
+compound_statement: '{' '}'
+	| '{' statement'}'
+	| '{' statement statements'}'
+	;
+statements: statement
+	| statement statements
+	;
+
+statement: print_statement
+	| declaration
+	| assignment_statement
+	| if_statement
+	| while_statement
+	;
+
+print_statement:	'print' expression ';' ;
+declaration: 'int' identifier ';' ;
+assignment_statement: identifier '=' expression ';' ;
+while_statement: 'while' '(' true_false_expression ')' compound_statement ;
+
+if_statement: if_head
+	| if_head 'else' compound_statement
+	;
+if_head: 'if' '(' true_false_expression ')' compound_statement ;
+
+expression: number
+	| expression '*' expression
+	| expression '/' expression
+	| expression '+' expression
+	| expression '-' expression
+	| expression '==' expression
+	| expression '!=' expression
+	| expression '<' expression
+	| expression '>' expression
+	| expression '<=' expression
+	| expression '>=' expression
+	;
+
+number: T_INTLIT
+	;
+identifier: T_IDENT
+	;

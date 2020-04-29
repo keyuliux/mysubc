@@ -14,3 +14,4 @@
 13_Functions,part2
 14_Generation ARM assembly code(TBD)
 15_Pointers,part1
+16_Global_var

@@ -17,3 +17,4 @@
 16_Global_var
 17_Scaling_Offsets
 18_Lvalues_Revisited
+19_Arrays_part1

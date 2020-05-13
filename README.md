@@ -20,3 +20,5 @@
 19_Arrays_part1
 20_Char_Str_literals
 21_More_operators
+22_Design_locals(no code)
+23_Local_viriables
